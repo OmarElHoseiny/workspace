@@ -48,11 +48,11 @@ $(document).ready(function(){
         }
     })
 });
-$(document).ready(function(){
-    $(".addReservation").click(function(){
-        window.location.href="AddForm.html";
-    })
-});
+// $(document).ready(function(){
+//     $(".addReservation").click(function(){
+//         window.location.href="AddForm.html";
+//     })
+// });
 
 function addSpaceToArray(spaceType,spaceDes,spacePrice,spaceImg){
     let newSpace={
