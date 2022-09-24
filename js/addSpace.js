@@ -15,6 +15,24 @@
 // let priceHolder=document.querySelector(".price__holder");
 // let imageHolder=document.querySelector(".img");
 // let spacesItems=document.querySelector(".spaces__items");
+let myPromise = new Promise(function(myResolve, myReject) {
+    let req = new XMLHttpRequest();
+    req.open('GET', "addSpace.html");
+    req.onload = function() {
+      if (req.status == 200) {
+        myResolve(req.response);
+      } else {
+        myReject("File not Found");
+      }
+    };
+    req.send();
+  });
+  
+  myPromise.then(
+    function(value) {myDisplayer(value);},
+    function(error) {myDisplayer(error);}
+  );
+
 let addReservation=document.querySelector(".addReservation");
 let space=[];
 if(localStorage.getItem("space")){
@@ -27,7 +45,7 @@ if(localStorage.getItem("username")!="admin"){
 spacesItems.addEventListener("click",(e)=> {
     if (e.target.classList.contains("remove")){
         deleteSpace(e.target.parentElement.parentElement.getAttribute("spaceID"));
-        e.target.parentElement.parentElement.remove();
+        e.target.parentElement.parentElement.parentElement.remove();
     }
 })
 $(document).ready(function(){
