@@ -45,7 +45,7 @@ if(localStorage.getItem("username")!="admin"){
 spacesItems.addEventListener("click",(e)=> {
     if (e.target.classList.contains("remove")){
         deleteSpace(e.target.parentElement.parentElement.getAttribute("spaceID"));
-        e.target.parentElement.parentElement.parentElement.remove();
+        e.target.parentElement.parentElement.parentElement.parentElement.remove();
     }
 })
 $(document).ready(function(){
