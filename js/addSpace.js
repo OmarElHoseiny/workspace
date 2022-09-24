@@ -40,7 +40,6 @@ $(document).ready(function(){
         Description.value="";
         price.value="";
         image.value="";
-        window.location.href = "AddSpace.html";
         }
         else{
             alert("please enter valid information");
