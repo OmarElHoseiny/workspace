@@ -16,9 +16,9 @@ let priceHolder=document.querySelector(".price__holder");
 let imageHolder=document.querySelector(".img");
 let spacesItems=document.querySelector(".spaces__items");
 let viewWorkspace=document.querySelector(".view__workspace");
-if(localStorage.getItem("username")!="admin"){
-    viewWorkspace.innerHTML="view new workspaces";
-    }
+// if(localStorage.getItem("username")!="admin"){
+//     viewWorkspace.innerHTML="view new workspaces";
+//     }
 function addSignInLink(){
     let li=document.createElement("li");
     let ul=document.querySelector("#nav__right__list");
