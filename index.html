@@ -10,11 +10,15 @@
 </head>
 <body>
 
-  <nav>
+  <nav class="navbar navbar-expand-lg">
     <div class="container-fluid test">
+      <div class="navbar-collapse">
+
         <div class="d-flex justify-content-between">
             <div class="row">
-            <div class="nav__left d-flex justify-content-between col-7">
+              <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>  </button>
+            <div class="nav__left d-flex justify-content-between col-7 d-none d-lg-flex">
           <!-- <logo -->
             <div class="ps-3 py-2 col-3"> <a href="#">
            <img  src="images/logo.png"  alt="Logo" width="100%" class="d-inline-block align-text-top">  </a></div>
@@ -148,7 +152,7 @@
                            </ul> </div></li>
                 </ul>    
             </div>          
-            <div class="nav__right d-flex col-5 " id="nav__right">
+            <div class="nav__right d-flex col-5 d-none d-lg-flex" id="nav__right">
                 <ul  class="d-flex mb-0" type="none" id="nav__right__list">
                     <div class="row nav__right__list">
                <li class="px-4 py-3 col-4">
@@ -159,6 +163,7 @@
             </div>
         </div>
     </div>
+    </div> 
     </div> 
 </nav>
 <!-- <slider -->
