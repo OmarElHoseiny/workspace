@@ -27,7 +27,7 @@ li:hover i{transform: rotate(180deg);}
 .menu-display{display: none;}
 .dropdown-li{background-color:whitesmoke;color:#7E685A}
 .dropdown-item{color:#7E685A;}
-p{color:white;}
+p{color:#6c757d;}
 .headings-h2{ color: #E7717D;text-align: center;}
 .cards-p {color: #7E685A ;text-align: center;}
 .carousel-p{color:white;}
@@ -35,8 +35,9 @@ p{color:white;}
 .carousel-h1{color:white;}
 .change-color{color:white;}
 
+@media screen and (min-width:769px){
 .card-edited{margin: 0.5em;
-width: calc(100%/4);}
+width: calc(100%/4);}}
 .menu-p-underline{ border-bottom: 2px solid gainsboro;}
 .btn-color{background-color: #AFD275;color:white ;}
 .btn-color:hover{background-color: #E7717D; color: white;border: none;}
@@ -46,4 +47,15 @@ width: calc(100%/4);}
 .map{background-color: whitesmoke;}
 .h2-newcolor{color: #AFD275;}
 
+@media screen and (max-width:768px){
+    .card-edited:not(:first-child){display: none;}
+    
+}
+a{text-decoration: none;}
+.btn-color3{background-color: #AFD275; color: white;}
+.btn-color3:hover{background-color: #9eca58; color: white;}
+.btn-color4{background-color: #E7717D;color: white;}
+.btn-color4:hover{background-color: #e45c6a;color: white;}
 
+.bg-color{background-color:gainsboro;}
+.form-bg-color{ background-color:rgba(250, 235, 215,0.7); height: 70vh; border-radius: 2%;}
